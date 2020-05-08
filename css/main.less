@@ -1212,7 +1212,33 @@ footer{
     margin-bottom: 20px;
   }
 
-  .about-pageheader{
+  &.text-center{
+    img{
+      @media (min-width:1200px){
+        margin-bottom: 35px;
+      }
+    }
+
+    >div{
+      .text{
+        span{
+          @media (min-width:1200px){
+            font-size: 36px;
+          }
+        }
+        &:first-of-type{
+          span{
+            @media (min-width:1200px){
+              font-size: 26px;font-weight: 300;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.about-pageheader{
     .text{
       @media (min-width:992px){
         padding-left: 185px;
@@ -1230,9 +1256,7 @@ footer{
 
 
   .text{
-    @media (min-width:992px){
-      padding-left: 185px;
-    }
+
     >span{
       display: block;
       font-family: @Open-Sans;
@@ -1253,12 +1277,6 @@ footer{
       }
       @media (max-width:767px){
           font-size: 18px;
-      }
-      &:last-child{
-        @media (min-width:992px){
-          padding-left: 185px;
-        }
-
       }
     }
   }
@@ -1504,5 +1522,43 @@ footer{
     >ymaps{
       height: 300px !important;
     }
+  }
+}
+
+
+
+.price-section{
+  background-size: cover;
+  background-position: center;
+  padding:50px 0;
+  min-height: 490px;
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #020202;
+  @media (max-width:1200px){
+    min-height: initial;
+  }
+  .h3{
+    text-transform: initial;
+    margin-bottom: 20px;
+    @media (min-width:1200px){
+      font-size: 30px;
+    }
+  }
+}
+
+
+.btn-default.download{
+  max-width: 433px;
+  background: #37B446;
+  &:hover,&:focus{
+    background: @blue;
+  }
+  @media (min-width:768px){
+    font-size: 18px;
+  }
+  img{
+    margin-right: 10px;
   }
 }
