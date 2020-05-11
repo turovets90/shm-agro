@@ -5,47 +5,6 @@ $(document).ready(function(){
         return false;
     });
 
-
-/*
-
-    $('.main-menu .arrow').click(function(){
-        $(this).parent().toggleClass('act');
-        $(this).next().slideToggle();
-    });
-
-    $('.main-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots:true,
-        fade:true,
-    });
-
-    $('.product-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.product-slider__nav',
-    });
-    $('.product-slider__nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.product-slider',
-        dots: false,
-        arrows: true,
-        centerMode: true,
-        focusOnSelect: true,
-        centerPadding: 0
-    });
-
-
-    $('.sidebar-menu .arrow').click(function(){
-       $(this).next().slideToggle();
-       $(this).parent().toggleClass('active');
-    });
-*/
-
 });
 
 
